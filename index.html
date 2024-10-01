@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>testing if ssh key added</title>
+    <script src="./script.js" defer></script>
+  </head>
+  <body
+    style="background-color: rgb(35, 35, 35); color: azure; font-size: larger"
+  >
+    <div>
+      <h2>getalluser</h2>
+      <button onclick="getAllUsers()">getAllUsers</button>
+    </div>
+
+    <div>
+      <h2>signup</h2>
+      <form class="signup-form">
+        <input type="text" name="email" placeholder="email" />
+        <input type="text" name="username" placeholder="username" />
+        <input type="text" name="password" placeholder="password" />
+        <button type="submit">submit</button>
+      </form>
+      <button onclick="setCredentials(this)">setCredentials</button>
+    </div>
+
+    <div>
+      <h2>login</h2>
+      <form class="login-form">
+        <input type="text" name="email" placeholder="email" />
+        <input type="text" name="password" placeholder="password" />
+        <button type="submit">submit</button>
+      </form>
+      <button onclick="setCredentials(this)">setCredentials</button>
+    </div>
+
+    <div>
+      <h2>getUserDetail</h2>
+      <form>
+        <button onclick="getUserDetail()">getAllUsers</button>
+      </form>
+    </div>
+
+    <div>
+      <h2>Profile</h2>
+      <button onclick="getProfile()">profile</button>
+    </div>
+  </body>
+</html>
