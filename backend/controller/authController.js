@@ -31,6 +31,7 @@ export const signup = async (req, res, next) => {
 
     next();
   } catch (error) {
+    console.error(error);
     return res.status(500).json({ msg: "server error", error });
   }
 };
@@ -63,6 +64,8 @@ export const login = async (req, res, next) => {
       .cookie("token", token, cookieOptions)
       .json({ msg: "user logged in successfully", user: user.email });
   } catch (error) {
+
+    console.error({error})
     // next(error);
     return res.status(400).json(error);
   }
