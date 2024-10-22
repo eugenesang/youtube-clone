@@ -1,1 +1,0 @@
-console.log("/public/javascript/video.js")
